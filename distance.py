@@ -19,7 +19,7 @@ class Solution:
         dlon = lon2 - lon1 
         dlat = lat2 - lat1
         
-        #Use The Great Circle distance formula computes the shortest distance path of two points on the surface of the sphere
+        #Use The Great Circle distance formula to compute the shortest distance path of two points on the surface of the sphere
         
         dist=acos(sin(lat1) * sin(lat2) + cos(lat1) * cos(lat2) * cos(dlon))
         
