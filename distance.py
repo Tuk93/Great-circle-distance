@@ -54,10 +54,11 @@ for line in open('customer.json', 'r'):
 
         print('Distance (km) : ', a)
         if a <= radius:
+            print('we can invite : ',data['name'])
             customers.append((data['user_id'],data['name']))
 
         else:
-            print('Outside the area')
+            print('Outside of 100km range from Dublin office')
             
 print('total number of customers within 100km range : ',len(customers))
 
