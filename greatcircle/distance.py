@@ -3,10 +3,7 @@ from math import radians, degrees, sin, cos, asin, acos, sqrt
 import json
 
 class Solution:
-    def __init__(self):
-        self.lon2 = 53.339428
-        self.lat2 = -6.257664
-
+    
     def great_circle(self,lon1, lat1, lon2, lat2):
         # type: (object, object, object) -> object
         """
