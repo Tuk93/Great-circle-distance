@@ -51,13 +51,12 @@ For more information on setting it up locally, please follow official AWS dynamo
 
 Once you setup a table it will read customer.json file and add items in your Dynamodb table(geo-test) including primary key which it will create dynamically, as we want to return user_id and customer name in our final result so i have inserted corresponding fields with GPS coordinates (geoJson) in our table.
 
+
  PutItemInput = {
             'Item': {
                 'user_id': {'S': data['user_id']},
                 'name': {'S': data['name']}
-
             }
-
         }
         geoDataManager.put_Point(dynamodbgeo.PutPointInput(
             dynamodbgeo.GeoPoint(data['latitude'],data['longitude']),  # latitude then  longitude
