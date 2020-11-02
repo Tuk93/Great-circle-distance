@@ -47,10 +47,13 @@ This file will import the AWS sdk and set up your DynamoDB connection, create a 
 
 Additionally we can test the same by Setting Up DynamoDB Local (Downloadable Version) Having this local version helps you save on throughput, data storage, and data transfer fees. In addition, you don't need an internet connection while you develop your application. 
 
-For more information on setting it up locally, please follow official AWS dynamodb guidelines and steps : https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBLocal.DownloadingAndRunning.html
+For more information on setting it up locally, please follow official AWS dynamodb guidelines and steps :[dynamodb docs] (https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBLocal.DownloadingAndRunning.html)
 
 Once you setup a table it will read customer.json file and add items in your Dynamodb table(geo-test) including primary key which it will create dynamically, as we want to return user_id and customer name in our final result so i have inserted corresponding fields with GPS coordinates (geoJson) in our table.
 
+
+ ```python
+#preparing non key attributes for the item to add
 
  PutItemInput = {
             'Item': {
@@ -58,12 +61,14 @@ Once you setup a table it will read customer.json file and add items in your Dyn
                 'name': {'S': data['name']}
             }
         }
+        
         geoDataManager.put_Point(dynamodbgeo.PutPointInput(
             dynamodbgeo.GeoPoint(data['latitude'],data['longitude']),  # latitude then  longitude
             str(uuid.uuid4()),  # Use this to ensure uniqueness of the hash/range pairs.
             PutItemInput  # pass the dict here
         ))
 
+```
 
 please find sample entry from our geo-test Dynamodb table:
 
