@@ -1,4 +1,4 @@
-#  Great-circle-distance and DynamoDB Geo to calculate to calculate distance of two locations on Earth.
+#  Great-circle-distance and DynamoDB Geo to calculate distance of two locations on Earth.
 
 This repository contains one of the ways of geographic calculation and we can calculate distance of two locations on Earth using Python.We have several mathematical formulaes to calculate the distance, in this repository we will be covering Great-circle-distance method.
 
