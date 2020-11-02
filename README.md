@@ -71,7 +71,7 @@ Once you setup a table it will read customer.json file and add items in your Dyn
 ```
 
 please find sample entry from our geo-test Dynamodb table:
-
+```
 {
   "geohash": 5206934354372931255,
   "geoJson": "52.240382,-6.972413",
@@ -80,12 +80,12 @@ please find sample entry from our geo-test Dynamodb table:
   "rangeKey": "a7121176-a419-4f54-9a99-712460d5266b",
   "user_id": 10
 }
-
+```
 Sample query from geo library:
-
+```
 query_reduis_result=geoDataManager.queryRadius(
     dynamodbgeo.QueryRadiusRequest(
         dynamodbgeo.GeoPoint(dub_lat2, dub_lon2), # dub office point
         100000, QueryRadiusInput, sort = True)) # radius in meters
-
+```
 
