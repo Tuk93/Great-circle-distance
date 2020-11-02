@@ -18,13 +18,13 @@ The radius r value for this spherical Earth formula is approximately ~6371 km(If
 
 1.Clone the repo :
 ```
-   ##### git clone https://github.com/Tuk93/Great-circle-distance.git
+    git clone https://github.com/Tuk93/Great-circle-distance.git
 ```
 2.Change your directory to the cloned repo.
 
 3.First you can run the python file reader.py which reads the customer.json file and reads each customer entry (one per line) to calculate the distance of customer from our dublin office and returns the list of customer id and names who are within 100km range from our dublin office.
 ```
-### python reader.py
+ python reader.py
 ```
 4.Our distance.py file contains the programme to calculate distance of two locations based on GPS coordinates.
 
