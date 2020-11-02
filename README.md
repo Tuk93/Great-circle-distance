@@ -41,7 +41,7 @@ Using Geo Library for Amazon DynamoDB to query geospatial data using Amazon Dyna
 ```
 Go to the dynamodbgeo folder, Once you installed the above packages please run :
 ```
-### python querytable.py
+ python querytable.py
 ```
 This file will import the AWS sdk and set up your DynamoDB connection, create a table in your AWS account in us-east-1 region with name geo-test.Once the table is created it will assign 5WCU/RCU cost efficient throughput (we can decrease it further once we are done with our testing).
 
