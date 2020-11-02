@@ -4,7 +4,7 @@ This repository contains one of the ways of geographic calculation and we can ca
 
 Our formula will take inputs as GPS coordinates (latitude, longitude), and return the approximately distance and based on that distance we can take our future business decisions.
 
-### First method:
+### First method (greatcircle):
 
 #### The Great-Circle Distance :
 
@@ -29,7 +29,7 @@ The radius r value for this spherical Earth formula is approximately ~6371 km(If
 4.Our distance.py file contains the programme to calculate distance of two locations based on GPS coordinates.
 
 
-### Second method:
+### Second method (dynamodbgeo):
 
 Using Geo Library for Amazon DynamoDB to query geospatial data using Amazon DynamoDB.(unofficial port of https://github.com/awslabs/dynamodb-geo), we will be using feature Radius Queries which Returns all of the items that are within a given radius of a geo point.
 
