@@ -33,12 +33,12 @@ The radius r value for this spherical Earth formula is approximately ~6371 km(If
 
 Using Geo Library for Amazon DynamoDB to query geospatial data using Amazon DynamoDB.(unofficial port of https://github.com/awslabs/dynamodb-geo), we will be using feature Radius Queries which Returns all of the items that are within a given radius of a geo point.
 
-##Installation :
-
-#### pip install s2sphere
-#### pip install boto3
-#### pip install dynamodbgeo
-
+## Installation :
+```
+ pip install s2sphere
+ pip install boto3
+ pip install dynamodbgeo
+```
 Go to the dynamodbgeo folder, Once you installed the above packages please run :
 
 ### python querytable.py
