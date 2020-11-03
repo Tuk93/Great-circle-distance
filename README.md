@@ -51,7 +51,7 @@ cd dynamodbgeo
 ```
  python3 querytable.py > output.txt
 ```
-```
+
 Note: In case you receive any errors related to tab inconsistency, please use autopep8 to remove inconsistent tabs and run again querytable.py with above
 ```
 pip install autopep8
@@ -66,7 +66,7 @@ For more information on setting it up locally, please follow official AWS dynamo
 Once you setup a table it will read customer.json file and add items in your Dynamodb table(geo-test) including primary key which it will create dynamically, as we want to return user_id and customer name in our final result so i have inserted corresponding fields with GPS coordinates (geoJson) in our table.
 
 
- ```python
+```
 #preparing non key attributes for the item to add
 
  PutItemInput = {
