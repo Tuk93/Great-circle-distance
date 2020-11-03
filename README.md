@@ -52,7 +52,7 @@ cd dynamodbgeo
  python3 querytable.py > output.txt
 ```
 
-Note: In case you receive any errors related to tab inconsistency, please use autopep8 to remove inconsistent tabs and run again querytable.py with above
+##### Note: In case you receive any errors related to tab inconsistency, please use autopep8 to remove inconsistent tabs and run again querytable.py with above
 ```
 pip install autopep8
 autopep8 -i querytable.py
