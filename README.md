@@ -44,9 +44,10 @@ Go to the dynamodbgeo folder, Once you installed the above packages please run :
  python3 querytable.py > output.txt
 ```
 Note: In case you receive any errors related to tab inconsistency, please use autopep8 to remove inconsistent tabs
+```
 pip install autopep8
 autopep8 -i querytable.py
-
+```
 This file will import the AWS sdk and set up your DynamoDB connection, create a table in your AWS account in us-east-1 region with name geo-test.Once the table is created it will assign 5WCU/RCU cost efficient throughput (we can decrease it further once we are done with our testing).
 
 Additionally we can test the same by Setting Up DynamoDB Local (Downloadable Version) Having this local version helps you save on throughput, data storage, and data transfer fees. In addition, you don't need an internet connection while you develop your application. 
