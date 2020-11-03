@@ -33,3 +33,6 @@ query_reduis_result=geoDataManager.queryRadius(
         100000, QueryRadiusInput, sort = True)) # diameter
 print(query_reduis_result)
 
+for customer in query_reduis_result:
+  print(customer['user_id'],',',customer['name'])
+
