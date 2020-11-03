@@ -43,9 +43,14 @@ Using Geo Library for Amazon DynamoDB to query geospatial data using Amazon Dyna
  pip install boto3
  pip install dynamodbgeo
 ```
-Go to the dynamodbgeo folder, Once you installed the above packages please run :
+change to the dynamodbgeo folder, Once you installed the above packages please run :
+
+```
+cd dynamodbgeo
+```
 ```
  python3 querytable.py > output.txt
+```
 ```
 Note: In case you receive any errors related to tab inconsistency, please use autopep8 to remove inconsistent tabs and run again querytable.py with above
 ```
