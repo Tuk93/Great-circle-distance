@@ -29,7 +29,5 @@ for line in open('customer.json', 'r'):
 print('total number of customers within 100km range : ',len(customers))
 
 customers=(sorted(customers))
-with open('result1.txt', 'w') as filehandle:
+with open('output.txt', 'w') as filehandle:
      json.dump(customers, filehandle)
-#with open('listfile.txt', 'w') as filehandle:
-    #filehandle.writelines("%s," % place for place in customers)
