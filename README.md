@@ -20,9 +20,9 @@ The radius r value for this spherical Earth formula is approximately ~6371 km(If
 ```
     git clone https://github.com/Tuk93/Great-circle-distance.git
 ```
-2.Change your directory to the cloned repo.
+2.Change your greatcircle directory of the cloned repo.
 
-3.First you can run the python file reader.py which reads the customer.json file and reads each customer entry (one per line) to calculate the distance of customer from our dublin office and returns the list of customer id and names who are within 100km range from our dublin office.
+3.First you can run the python file 'reader.py' which reads the customer.json file and reads each customer entry (one per line) to calculate the distance of customer from our dublin office and returns the list of customer id and names who are within 100km range from our dublin office.
 ```
  python reader.py
 ```
@@ -41,8 +41,12 @@ Using Geo Library for Amazon DynamoDB to query geospatial data using Amazon Dyna
 ```
 Go to the dynamodbgeo folder, Once you installed the above packages please run :
 ```
- python querytable.py
+ python3 querytable.py > output.txt
 ```
+Note: In case you receive any errors related to tab inconsistency, please use autopep8 to remove inconsistent tabs
+pip install autopep8
+autopep8 -i querytable.py
+
 This file will import the AWS sdk and set up your DynamoDB connection, create a table in your AWS account in us-east-1 region with name geo-test.Once the table is created it will assign 5WCU/RCU cost efficient throughput (we can decrease it further once we are done with our testing).
 
 Additionally we can test the same by Setting Up DynamoDB Local (Downloadable Version) Having this local version helps you save on throughput, data storage, and data transfer fees. In addition, you don't need an internet connection while you develop your application. 
